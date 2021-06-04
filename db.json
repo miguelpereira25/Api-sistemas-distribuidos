@@ -1,0 +1,43 @@
+{
+  "alunos": [
+    {
+      "id": "asdd",
+      "nome": "Tiago",
+      "sobrenome": "Santos"
+    },
+    {
+      "id": "qwer",
+      "nome": "Miguel",
+      "sobrenome": "Pereira"
+    },
+    {
+      "id": "asdasd",
+      "nome": "Pedro",
+      "sobrenome": "Santos"
+    },
+    {
+      "id": "d5fE_asz",
+      "nome": "Bernardo",
+      "sobrenome": "Santos"
+    },
+    {
+      "id": "d5fE_asz",
+      "nome": "Tiago",
+      "sobrenome": "Manuel"
+    }
+  ],
+  "cadeiras": [
+    {
+      "id": "lhitn",
+      "nome": "Algebra_I"
+    },
+    {
+      "id": "qwcvbcvber",
+      "nome": "Computacao"
+    },
+    {
+      "id": "cvbcvb",
+      "nome": "metodos"
+    }
+  ]
+}
