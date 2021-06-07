@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { nanoid } = require("nanoid");
+const Cadeira = require('../models/class');
 
 const idLength = 8;
 
@@ -114,14 +115,12 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
 	try {
-		const cadeira = {
-			id: nanoid(idLength),
-			...req.body,
-		};
-
-    req.app.db.get("cadeiras").push(cadeira).write();
-    
-    res.send(cadeira)
+		const cadeira = new Cadeira(req.body)
+		cadeira.save()
+		req.app.db.get("cadeiras").push(cadeira).write();
+		res.send(cadeira);
+		console.log("nova cadeira criada");
+	
 	} catch (error) {
 		return res.status(500).send(error);
 	}
